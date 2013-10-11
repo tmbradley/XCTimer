@@ -14,6 +14,10 @@
         <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="eventTimes" inverseEntity="Event" syncable="YES"/>
         <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="eventTimes" inverseEntity="Person" syncable="YES"/>
     </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="noteString" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Person" representedClassName="Person" syncable="YES">
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
@@ -34,6 +38,7 @@
     <elements>
         <element name="Event" positionX="189" positionY="477" width="128" height="120"/>
         <element name="EventTime" positionX="468" positionY="300" width="128" height="120"/>
+        <element name="Note" positionX="160" positionY="192" width="128" height="75"/>
         <element name="Person" positionX="160" positionY="192" width="128" height="180"/>
         <element name="Race" positionX="189" positionY="417" width="128" height="105"/>
     </elements>
